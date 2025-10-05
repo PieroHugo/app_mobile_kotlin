@@ -16,6 +16,9 @@ fun NavGraphBuilder.homeNavGraph(
         HomeScreen(
             onNavigateToProfile = {
                 navController.navigate("profile_graph")
+            },
+            onNavigateToMonitoring = {
+                navController.navigate("monitoring_graph")
             }
         )
     }
