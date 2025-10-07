@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Close
@@ -45,8 +46,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
-import androidx.compose.material3.TextButtonDefaults
-import androidx.compose.material3.menuAnchor
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -57,11 +56,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.KeyboardOptions
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.wear.compose.material3.TextButton
 import com.uitopic.restockmobile.ui.theme.RestockmobileTheme
 import java.text.NumberFormat
 import java.util.Locale
@@ -106,15 +105,17 @@ fun RegisterSaleScreen(
     val dishOptions = remember {
         listOf(
             DishOption(1, "Lomo Saltado", 20.50),
-            DishOption(2, "Arroz con Pollo", 15.50),
-            DishOption(3, "Sopa dieta", 12.80)
+            DishOption(2, "Arroz con pollo", 15.50),
+            DishOption(3, "Escabeche de pollo", 12.80),
+            DishOption(4,"Tallarin con pollo con papa a la huancaina",18.00)
         )
     }
     val supplyOptions = remember {
         listOf(
             SupplyOption(1, "Huevo", "1"),
             SupplyOption(2, "Arroz", "250 g"),
-            SupplyOption(3, "Inka cola personal", "1")
+            SupplyOption(3, "Inka cola personal", "1"),
+            SupplyOption(4, "Papas", "150 g")
         )
     }
 
@@ -712,10 +713,15 @@ private fun DishesTable(
             horizontalArrangement = Arrangement.End
         ) {
             TextButton(
-                onClick = { selections.lastOrNull()?.let(onRemoveSelection) },
+                onClick = {
+                    selections.lastOrNull()?.let { last -> onRemoveSelection(last) }
+                },
                 enabled = selections.isNotEmpty(),
-                colors = TextButtonDefaults.textButtonColors(
-                    contentColor = MaterialTheme.colorScheme.error
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = MaterialTheme.colorScheme.error,
+                    disabledContainerColor = Color.Transparent,
+                    disabledContentColor = MaterialTheme.colorScheme.error.copy(alpha = 0.4f)
                 )
             ) {
                 Icon(Icons.Outlined.Delete, contentDescription = null)
@@ -786,8 +792,11 @@ private fun SuppliesTable(
             TextButton(
                 onClick = { selections.lastOrNull()?.let(onRemoveSelection) },
                 enabled = selections.isNotEmpty(),
-                colors = TextButtonDefaults.textButtonColors(
-                    contentColor = MaterialTheme.colorScheme.error
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.Transparent,
+                    contentColor = MaterialTheme.colorScheme.error,
+                    disabledContainerColor = Color.Transparent,
+                    disabledContentColor = MaterialTheme.colorScheme.error.copy(alpha = 0.4f)
                 )
             ) {
                 Icon(Icons.Outlined.Delete, contentDescription = null)
@@ -963,7 +972,7 @@ private fun SummaryTable(
                             }
                         }
                         if (index < rows.lastIndex) {
-                            HorizontalDivider()
+                            Divider()
                         }
                     }
                 }
