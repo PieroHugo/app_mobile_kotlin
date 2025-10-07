@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            -----BEGIN CERTIFICATE-----
+            MIIDSjCCAjKgAwIBAgIQRK+wgNajJ7qJMDmGLvhAazANBgkqhkiG9w0BAQUFADBH
+            MQswCQYDVQQGEwJVUzEiMCAGA1UEChMZR29vZ2xlIEluYy4gLSBEZWxhd2FyZTEW
+            MBQGA1UECxMNR2xvYmFsIE1hcmtldGluZzAeFw0wODA4MjEyMzEzMzNaFw0zNjAx
+            MDcyMzEzMzNaMEcxCzAJBgNVBAYTAlVTMSIwIAYDVQQKExlHb29nbGUgSW5jLiAt
+            IERlbGF3YXJlMRYwFAYDVQQLEw1HbG9iYWwgTWFya2V0aW5nMIIBIjANBgkqhkiG
+            9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuE1Z9lZGMVn4JtUedm4C0C3yBc2p6+wTZ7kH
+            +T0G0B8YwlH9RPbvXK0vFm5D2r0F4V9PxO1mDfuLNz6ur6A6z2ZxYjaAEfzy0tIg
+            9QW6Q7YfF0VNdgmY3A8C3y90qlGxThBacZpmjHtkobaN6D+PfYZ7R6pujISiFDUF
+            qgx2T0sO+FkgR7UOZROaYxZx3C9h6BfZpzn6x3uB0tWKi0yXrF9CgYpS7Z1XguPZ
+            mHUh8F7eQMxK8V3aGLsDgY8EY3WwRaHDe3yk5G2ClqNlMwECszO2vCuxnxOQk4LL
+            aV3K8C9+yLJ0fP+f1yC5iYG3PaY5H3a+CE0nPddO+jXS6jttuPAoQ+0CAwEAAaNC
+            MEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFMdD
+            8J8GdZ7k+eG1mKq7Z9v8nQ+bMA0GCSqGSIb3DQEBBQUAA4IBAQApfm6I19cFK4QK
+            4FzPJj2eM7XwXv9Y2EfF9vDdc0AGJi/7luWGINuD/7++UZ5EONosFVJeGb3PcTJS
+            0uQXFA5MzJp0ZkYDV9HgD3n77u+LZ9eczsQnUnxE27XGr0C+MEY0S8NxF7+XkZJz
+            4iV1P0J9Y7ULFvLlwM651c01qmPvvrLpzjAu6YewsGQKzBSSo+d5QwDFi1Cdm42H
+            r7mIoP0YtX6+4Hknc0aF4Pjk6IZdxHDBPPfQtbDNRsTA70vsK1tnE+bBZ5YTBH7N
+            GSR0UXWkYy0fXcbB3ZzzO+bgblA6E6DR6cS3pSkeCZMt2rt7NmBGG99nmCaTKt00
+            oZ1Vy/0n
+            -----END CERTIFICATE-----
+        </item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            -----BEGIN CERTIFICATE-----
+            MIIEATCCAumgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNV
+            BAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBW
+            aWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4G
+            A1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzNaFw0zNjAxMDcyMzEzMzNaMHQx
+            CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3Vu
+            dGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9p
+            ZDEQMA4GA1UEAxMHQW5kcm9pZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+            ggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPK
+            Zsa1+lZeX7IuP89xDSHLVQQDBlnZ0d9sQZJwq7mGWGa6ZkhosbND3Fh2pg3sS7ZM
+            ZxAwAr3xPYnME4YJdQg2glrcFede6E3aZ0SqnX+0GoKX6c0bUGd7JNl6p7n3N7gs
+            JrbApNNGa0JPkC3ja2wv/iqR8q7pPytNJw5hIu74Jx00h19h0VqtdE6cXxgQ7WXB
+            an9FshUn1MYqctZ73IP3AReypws5BD3v8pPACX6iQ+UpBAkLTlaX2UJSncfLBP7g
+            oGXXHw0L7L+e3sKnN1gsVp5Y6z0CAwEAAaOCAVQwggFQMB0GA1UdDgQWBBQWKmkv
+            D09wQp0i42OrZgN9A42IbzCB1gYDVR0jBIHNMIHKgBQWKmkvD09wQp0i42OrZgN9
+            A42IbaGBpqSBozCBoDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWEx
+            FjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC0dvb2dsZSBJbmMuMRAw
+            DgYDVQQLEwdBbmRyb2lkMRAwDgYDVQQDEwdBbmRyb2lkMSAwHgYJKoZIhvcNAQkB
+            FhFhbmRyb2lkQGdvb2dsZS5jb20CAQOjgcAwgb0wHQYDVR0OBBYEFJquC0uKMjdH
+            7/1bqV1+zzeFwmpmMIGmBgNVHSMEgZ4wgZuAFJquC0uKMjdH7/1bqV1+zzeFwmpm
+            oXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UE
+            BxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsT
+            B0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWQxIDAeBgkqhkiG9w0BCQEWFGFuZHJv
+            aWRAZ29vZ2xlLmNvbQIBATAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4GB
+            AHMzKQdJ3Gf8Z4HBGJ9N8oJl6Fktg4HjvFzra1mrEAbU/KdjbQcV8uzF8H9tUGiK
+            rYDp9mIKR6Z+d35sL/0vP2CjWZCl+YD3acHIxVgXjj8V+RaHcRUW2KIiMzFxLpyR
+            fGFi2MUM2Jd6BqXc9E+u6KDAdAm8YGtX3i0jHoUcxrF+
+            -----END CERTIFICATE-----
+        </item>
+    </array>
+</resources>
